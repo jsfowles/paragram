@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '@components/button';
 
 interface Image {
   img: string;
@@ -25,9 +26,16 @@ const TwoGrid = ({ blockOne, blockTwo, bgColor, textColor }: Props) => {
           />
           <div className="animate bg-black/20 hover:bg-black/0 absolute inset-0 z-50" />
         </div>
-        <div className={`text-${textColor} w-3/5`}>
-          <h4 className="pt-3 pb-2 font-bold uppercase">{blockOne.title}</h4>
-          <p>{blockOne.description}</p>
+        <div
+          className={`text-${textColor} w-full flex justify-between items-center`}
+        >
+          <div className="w-3/5">
+            <h4 className="pt-3 pb-2 font-bold uppercase">{blockOne.title}</h4>
+            <p>{blockOne.description}</p>
+          </div>
+          <div className="pr-10">
+            <Button>Learn More</Button>
+          </div>
         </div>
       </div>
       <div className="w-full relative">
@@ -39,9 +47,16 @@ const TwoGrid = ({ blockOne, blockTwo, bgColor, textColor }: Props) => {
           />
           <div className="animate bg-black/20 hover:bg-black/0 absolute inset-0 z-50" />
         </div>
-        <div className={`text-${textColor} w-3/5`}>
-          <h4 className="pt-3 pb-2 font-bold uppercase">{blockTwo.title}</h4>
-          <p>{blockTwo.description}</p>
+        <div
+          className={`text-${textColor} w-full flex justify-between items-center`}
+        >
+          <div className="w-3/5">
+            <h4 className="pt-3 pb-2 font-bold uppercase ">{blockTwo.title}</h4>
+            <p>{blockTwo.description}</p>
+          </div>
+          <div className="pr-10">
+            <Button>Learn More</Button>
+          </div>
         </div>
       </div>
     </div>
