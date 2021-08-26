@@ -7,33 +7,21 @@
 module.exports = {
   white: { DEFAULT: '#FFFFFF' },
   black: {
-    DEFAULT: '#1D2527',
+    DEFAULT: '#333333',
   },
   gray: {
-    DEFAULT: '#627C85',
+    DEFAULT: '#cacbca',
   },
   blue: {
-    DEFAULT: '#08BBD7',
+    DEFAULT: '#2e3d57',
   },
-  green: {
-    DEFAULT: '#a2e8dd',
+  lightBlue: {
+    DEFAULT: '#71b3c9',
   },
-  orange: {
-    DEFAULT: '#FF8867',
+  mint: {
+    DEFAULT: '#a2c4b5',
   },
   red: {
-    DEFAULT: '#F9495C',
-  },
-  pink: {
-    DEFAULT: '#DE3285',
-  },
-  grayTones: {
-    50: '#F3F7FA',
-    100: '#E2EAF2',
-    200: '#BBC5CF',
-    300: '#9AA5AF',
-    400: '#78838E',
-    500: '#67707A',
-    600: '#465058',
+    DEFAULT: '#e34e48',
   },
 };

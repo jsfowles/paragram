@@ -1,18 +1,7 @@
-@layer base {
-    @font-face {
-        font-family: 'Bison';
-        url('Bison-Bold.ttf') format('truetype');
-        font-weight: bold;
-        font-style: normal;
-        font-display: swap;
-    }
+h1 {
+  @apply font-black uppercase text-gray-dark;
+}
 
-    @font-face {
-        font-family: 'Bison ThickOutline';
-
-        url('Bison-ThickOutline.ttf') format('truetype');
-        font-weight: 900;
-        font-style: normal;
-        font-display: swap;
-    }
+h4 {
+  @apply font-medium uppercase text-2xl;
 }
