@@ -27,13 +27,13 @@ const TwoGrid = ({ blockOne, blockTwo, bgColor, textColor }: Props) => {
           <div className="animate bg-black/20 hover:bg-black/0 absolute inset-0 z-50" />
         </div>
         <div
-          className={`text-${textColor} w-full flex justify-between items-center`}
+          className={`text-${textColor} w-full flex md:flex-row flex-col justify-between md:items-center`}
         >
-          <div className="w-3/5">
+          <div className="md:w-3/5">
             <h4 className="pt-3 pb-2 font-bold uppercase">{blockOne.title}</h4>
             <p>{blockOne.description}</p>
           </div>
-          <div className="pr-10">
+          <div className="pt-3 lg:pt-0 pr-10">
             <Button>Learn More</Button>
           </div>
         </div>
@@ -48,13 +48,13 @@ const TwoGrid = ({ blockOne, blockTwo, bgColor, textColor }: Props) => {
           <div className="animate bg-black/20 hover:bg-black/0 absolute inset-0 z-50" />
         </div>
         <div
-          className={`text-${textColor} w-full flex justify-between items-center`}
+          className={`text-${textColor} w-full flex md:flex-row flex-col justify-between md:items-center`}
         >
-          <div className="w-3/5">
+          <div className="md:w-3/5">
             <h4 className="pt-3 pb-2 font-bold uppercase ">{blockTwo.title}</h4>
             <p>{blockTwo.description}</p>
           </div>
-          <div className="pr-10">
+          <div className="pt-3 lg:pt-0 pr-10">
             <Button>Learn More</Button>
           </div>
         </div>
