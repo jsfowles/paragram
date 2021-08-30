@@ -4,7 +4,7 @@ const FourGrid = () => {
   return (
     <div className="grid gap-y-10 lg:gap-y-0 p-[7vw]">
       <div className="grid lg:grid-cols-2 gap-5 lg:gap-0 items-center">
-        <div className="space-y-4 lg:pr-20 max-w-[500px] justify-self-center lg:justify-self-end">
+        <div className="space-y-4 lg:px-20 max-w-[800px] justify-self-center lg:justify-self-end">
           <h3 className="text-2xl sm:text-4xl font-semibold">
             Nuclear vexatum iaceres crescere!
           </h3>
@@ -34,7 +34,7 @@ const FourGrid = () => {
             className="max-h-[1200px] object-contain"
           />
         </div>
-        <div className="space-y-4 lg:pl-20 max-w-[500px] justify-self-center lg:justify-self-start">
+        <div className="space-y-4 lg:px-20 max-w-[800px] justify-self-center lg:justify-self-start">
           <h3 className="text-2xl sm:text-4xl font-semibold">Vae.</h3>
           <p className="text-lg ">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
