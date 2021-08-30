@@ -1,17 +1,16 @@
 import React from 'react';
 import Image from 'next/image';
-import TwoGrid from '@components/twoGrid';
-import Configuration from '@components/configuration';
+import TwoGrid from '@components/TwoGrid';
+import Configuration from '@components/Configuration';
 
 const Home = () => {
   return (
     <>
       <div className="flex w-full relative ">
-        <div className=" w-full absolute top-0 z-10 h-[40vh] bg-gradient-to-b from-black to-transparent" />
         <div className="absolute inset-0 bg-black/40" />
         <img
           className="h-screen w-screen object-cover "
-          src="/images/home/hollow-body-agave.png"
+          src="/images/home/coral-cover.jpg"
           alt="pink agave"
         />
         <section className="max-content mx-auto absolute inset-0 z-20 flex items-center">
@@ -39,13 +38,13 @@ const Home = () => {
       <TwoGrid
         blockOne={{
           img: '/images/home/hollow-body-agave.png',
-          title: 'hollobody agave',
+          title: 'Agave',
           description:
             'Walnut neck reinforced with carbon fiber rods, ebony fretboard, mahogany body+ashtop, McNelly pickups and Wilkinson/Gotoh bridge.',
         }}
         blockTwo={{
           img: '/images/home/standard-agave.png',
-          title: 'standard agave',
+          title: 'Standard',
           description:
             'Walnut neck reinforced with carbon fiber rods, ebony fretboard, mahogany body+ashtop, McNelly pickups and Wilkinson/Gotoh bridge.',
         }}
@@ -53,18 +52,18 @@ const Home = () => {
       <TwoGrid
         blockOne={{
           img: '/images/home/continua.png',
-          title: 'hollobody agave',
+          title: 'Continua',
           description:
             'Walnut neck reinforced with carbon fiber rods, ebony fretboard, mahogany body+ashtop, McNelly pickups and Wilkinson/Gotoh bridge.',
         }}
         blockTwo={{
           img: '/images/home/bass.png',
-          title: 'standard agave',
+          title: 'Bass',
           description:
             'Walnut neck reinforced with carbon fiber rods, ebony fretboard, mahogany body+ashtop, McNelly pickups and Wilkinson/Gotoh bridge.',
         }}
-        bgColor="gray-dark"
-        textColor="white"
+        bgColor="bg-gray-dark"
+        textColor="text-white"
       />
 
       <Configuration image="/images/home/config.png" />

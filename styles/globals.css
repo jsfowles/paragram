@@ -28,7 +28,7 @@ a {
   @apply transition-all duration-500 ease-in-out;
 }
 .max-content {
-  @apply max-w-[1280px] px-[7vw] lg:px-0;
+  @apply max-w-[1280px] px-[7vw];
 }
 
 .min-content {
@@ -43,4 +43,48 @@ a {
     /* inner right cyan broad */ 0 0 50px #fff,
     /* outer white */ -10px 0 80px #f0f,
     /* outer left magenta */ 10px 0 80px #0ff; /* outer right cyan */
+}
+
+.popup-content {
+  margin: auto;
+  background: rgb(255, 255, 255);
+  width: 50%;
+
+  @apply border border-heading rounded-2xl overflow-hidden;
+}
+.popup-arrow {
+  color: rgb(255, 255, 255);
+}
+
+.popup-overlay {
+  @apply bg-white lg:bg-white/80;
+}
+[data-popup='tooltip'].popup-overlay {
+  background: transparent;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  @apply text-red;
+}
+
+@keyframes anvil {
+  0% {
+    transform: scale(1) translateY(0px);
+    opacity: 0;
+    box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+  }
+  1% {
+    transform: scale(0.96) translateY(10px);
+    opacity: 0;
+    box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+  }
+  100% {
+    transform: scale(1) translateY(0px);
+    opacity: 1;
+    box-shadow: 0 0 500px rgba(241, 241, 241, 0);
+  }
+}
+.popup-content {
+  -webkit-animation: anvil 0.3s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
+  @apply w-[90%] lg:w-[60%];
 }

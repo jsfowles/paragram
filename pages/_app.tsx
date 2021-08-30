@@ -6,6 +6,7 @@ import { ThemeProvider, useTheme } from 'next-themes';
 import { useRouter } from 'next/router';
 import { AnimatePresence } from 'framer-motion';
 import React from 'react';
+import Navigation from '@components/Navigation';
 
 function MyApp({ Component, pageProps }) {
   // On page load or when changing themes, best to add inline in `head` to avoid FOUC
@@ -24,7 +25,7 @@ function MyApp({ Component, pageProps }) {
           rel="stylesheet"
         />
       </Head>
-
+      <Navigation />
       <Component {...pageProps} key={router.route} />
     </>
   );

@@ -1,5 +1,7 @@
 import React from 'react';
-import Button from '@components/button';
+import Button from '@components/Button';
+import Popup from 'reactjs-popup';
+import PopupModal from '@components/Popup';
 
 interface Image {
   img: string;
@@ -15,7 +17,7 @@ interface Props {
 const TwoGrid = ({ blockOne, blockTwo, bgColor, textColor }: Props) => {
   return (
     <div
-      className={`grid grid-cols-1 lg:grid-cols-2 gap-[7vw] place-content-center lg:h-screen p-[7vw] bg-${bgColor}`}
+      className={`grid grid-cols-1 lg:grid-cols-2 gap-[7vw] place-content-center lg:h-screen p-[7vw] ${bgColor}`}
     >
       <div className="w-full relative">
         <div className="aspect-w-11 aspect-h-12 animate">
@@ -27,18 +29,27 @@ const TwoGrid = ({ blockOne, blockTwo, bgColor, textColor }: Props) => {
           <div className="animate bg-black/20 hover:bg-black/0 absolute inset-0 z-50" />
         </div>
         <div
-          className={`text-${textColor} w-full flex md:flex-row flex-col justify-between md:items-center`}
+          className={`${textColor} w-full flex md:flex-row flex-col justify-between md:items-center`}
         >
           <div className="md:w-3/5">
             <h4 className="pt-3 pb-2 font-bold uppercase">{blockOne.title}</h4>
             <p>{blockOne.description}</p>
           </div>
           <div className="pt-3 lg:pt-0 pr-10">
-            <Button>Learn More</Button>
+            <Popup
+              trigger={
+                <div className="button">
+                  <Button>Quick View</Button>
+                </div>
+              }
+              modal
+            >
+              <PopupModal title={blockOne.title} />
+            </Popup>
           </div>
         </div>
       </div>
-      <div className="w-full relative">
+      <div className="w-full relative ">
         <div className="aspect-w-11 aspect-h-12">
           <img
             src={blockTwo.img}
@@ -48,14 +59,23 @@ const TwoGrid = ({ blockOne, blockTwo, bgColor, textColor }: Props) => {
           <div className="animate bg-black/20 hover:bg-black/0 absolute inset-0 z-50" />
         </div>
         <div
-          className={`text-${textColor} w-full flex md:flex-row flex-col justify-between md:items-center`}
+          className={`${textColor} w-full flex md:flex-row flex-col justify-between md:items-center`}
         >
           <div className="md:w-3/5">
             <h4 className="pt-3 pb-2 font-bold uppercase ">{blockTwo.title}</h4>
             <p>{blockTwo.description}</p>
           </div>
           <div className="pt-3 lg:pt-0 pr-10">
-            <Button>Learn More</Button>
+            <Popup
+              trigger={
+                <div className="button">
+                  <Button>Quick View</Button>
+                </div>
+              }
+              modal
+            >
+              <PopupModal title={blockTwo.title} />
+            </Popup>
           </div>
         </div>
       </div>
