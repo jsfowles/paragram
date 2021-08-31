@@ -1,6 +1,7 @@
 import React from 'react';
 import PopupModal from '@components/Popup';
 import FourGrid from '@components/FourGrid';
+import DownArrows from '@components/DownArrows';
 
 const Bass = () => {
   return (
@@ -16,23 +17,23 @@ const Bass = () => {
           </h2>
           <h1 className="text-8xl py-6 text-white">Bass</h1>
           <p className="text-white text-3xl">Your guitar, your sound.</p>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-28 w-28 absolute bottom-16"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={0.5}
-              d="M19 13l-7 7-7-7m14-8l-7 7-7-7"
-            />
-          </svg>
+          <DownArrows />
         </div>
       </div>
-      <FourGrid />
+      <FourGrid
+        rowOne={{
+          title: 'Tailor made neck shapes and sizing',
+          description:
+            'We will work with you to design the perfect neck shape based on your preferences, playing style and hand size. We can also match or modify the neck shape of one of your favorite bass so that your custom electric bass will feel like an old friend. Contact us to learn more now!',
+          image: '/images/bass/agave-bass.jpg',
+        }}
+        rowTwo={{
+          title: 'The process',
+          description:
+            'Paragram guitars are individually crafted into works of art built to play with incredible ease, sound fantastic, and last for generations. Each guitar neck and body is built from scratch using the finest instrument woods, electronics and hardware available.',
+          image: '/images/bass/pink.jpg',
+        }}
+      />
     </>
   );
 };
