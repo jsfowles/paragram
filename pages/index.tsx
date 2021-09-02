@@ -2,36 +2,28 @@ import React from 'react';
 import Image from 'next/image';
 import TwoGrid from '@components/TwoGrid';
 import Configuration from '@components/Configuration';
+import Social from '@components/Social';
 
 const Home = () => {
   return (
     <>
       <div className="flex w-full relative ">
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/50" />
         <img
           className="h-screen w-screen object-cover "
           src="/images/home/coral-cover.jpg"
           alt="pink agave"
         />
-        <section className="max-content mx-auto absolute inset-0 z-20 flex items-center">
+        <section className="max-content mx-auto absolute inset-0 z-20 pt-12 flex items-center justify-center text-center">
           <div className="">
-            <h1 className="text-4xl md:text-[4vw] text-gray-light leading-none">
-              Para
-              <span className="text-red text-4xl md:text-[4vw] leading-none">
-                g
-              </span>
-              ram
+            <h1 className="pb-3 md:pb-6 text-gray-light leading-tight">
+              Electric Guitars <br /> & Basses
             </h1>
-            <h1 className="text-4xl md:text-[4vw] pb-6 text-gray-light leading-none">
-              Instruments
-            </h1>
-            <h4 className="pb-3 md:pb-6 md:text-[2vw] text-gray-light leading-none">
-              Electric Guitars & Basses
-            </h4>
-            <h4 className="text-gray-light md:text-[2vw] leading-none">
-              HANDMADE IN JALISCO,
-              <br /> THE HEART OF MEXICO
-            </h4>
+            <h5 className="text-gray-light leading-none text-4xl">
+              Handmade in Jalisco,
+              <br />
+              The heart of Mexico
+            </h5>
           </div>
         </section>
       </div>

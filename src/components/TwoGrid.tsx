@@ -17,9 +17,9 @@ interface Props {
 const TwoGrid = ({ blockOne, blockTwo, bgColor, textColor }: Props) => {
   return (
     <div
-      className={`grid grid-cols-1 lg:grid-cols-2 gap-[7vw] place-content-center lg:h-screen p-[7vw] ${bgColor}`}
+      className={`grid grid-cols-1 lg:grid-cols-2 gap-[7vw] place-content-center lg:h-screen px-[7vw] py-[14vw] ${bgColor}`}
     >
-      <div className="w-full relative">
+      <div className="w-full relative py-[7vw]">
         <div className="aspect-w-11 aspect-h-12 animate">
           <img
             src={blockOne.img}
@@ -49,7 +49,7 @@ const TwoGrid = ({ blockOne, blockTwo, bgColor, textColor }: Props) => {
           </div>
         </div>
       </div>
-      <div className="w-full relative ">
+      <div className="w-full relative py-[7vw]">
         <div className="aspect-w-11 aspect-h-12">
           <img
             src={blockTwo.img}

@@ -11,11 +11,12 @@ const Continua = () => {
           className="h-screen w-full object-cover object-top relative"
         />
         <div className="absolute inset-0 z-40 text-white flex flex-col justify-center items-center bg-black/40">
-          <h2 className="uppercase text-5xl">
-            Para<span className="text-red">g</span>ram
-          </h2>
-          <h1 className="text-8xl py-6 text-white">Continua</h1>
-          <p className="text-white text-3xl">Your guitar, your sound.</p>
+          <h1 className="text-[20vw] md:text-[10vw] py-6 text-white underline--magical">
+            Continua
+          </h1>
+          <h4 className="font-serif text-white text-[7vw] md:text-[5vw] font-serif">
+            Your guitar, your sound.
+          </h4>
           <DownArrows />
         </div>
       </div>

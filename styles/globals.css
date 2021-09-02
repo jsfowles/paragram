@@ -7,8 +7,19 @@ body {
   scroll-behavior: smooth;
   padding: 0;
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  @apply bg-white;
+  font-family: 'Inter', sans-serif;
+  @apply bg-white text-gray-dark;
+}
+
+.underline-hero:after {
+  position: absolute;
+  content: '';
+  height: 40px;
+  width: 100%;
+  right: 0;
+  z-index: -1;
+  bottom: 60px;
+  @apply bg-red;
 }
 
 #__next {

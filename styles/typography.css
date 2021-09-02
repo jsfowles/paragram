@@ -1,7 +1,40 @@
-h1 {
-  @apply font-black uppercase text-gray-dark;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-h4 {
-  @apply font-medium uppercase text-2xl;
+@layer base {
+  @font-face {
+    font-family: 'Fairfield LT Std';
+    src: url('./font/FairfieldLTStd-Light.woff2') format('woff2'),
+      url('./font/FairfieldLTStd-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  .hero {
+    @apply font-serif;
+  }
+  h1 {
+    @apply text-[10vw] md:text-[4vw] text-gray-dark font-thin;
+  }
+
+  h2 {
+    @apply text-[5vw] md:text-[3vw] font-medium;
+  }
+  h3 {
+    width: max-content;
+  }
+  h4 {
+    @apply text-xl;
+  }
+
+  h5 {
+    @apply font-serif tracking-widest;
+  }
+
+  p,
+  small {
+    @apply font-serif tracking-wide;
+  }
 }
