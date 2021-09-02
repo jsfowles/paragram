@@ -19,7 +19,7 @@ const Home = () => {
             <h1 className="pb-3 md:pb-6 text-gray-light">
               Electric Guitars <br /> & Basses
             </h1>
-            <h5 className="text-gray-light leading-tight text-4xl">
+            <h5 className="text-gray-light">
               Handmade in Jalisco,
               <br />
               The heart of Mexico

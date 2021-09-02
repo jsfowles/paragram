@@ -14,9 +14,7 @@ const Standard = () => {
           <h1 className="text-[16vw] md:text-[10vw] py-6 text-white underline-hero relative">
             Standard
           </h1>
-          <h4 className="text-white text-[7vw] md:text-[5vw] font-serif">
-            Your guitar, your sound.
-          </h4>
+          <h5 className="text-white">Your guitar, your sound.</h5>
           <DownArrows />
         </div>
       </div>

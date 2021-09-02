@@ -17,7 +17,7 @@
   }
 
   h1 {
-    @apply text-[10vw] md:text-[4vw] text-gray-dark font-bold leading-[1.1em];
+    @apply text-8xl text-gray-dark font-bold leading-[1.1em];
   }
 
   h2 {
@@ -31,7 +31,7 @@
   }
 
   h5 {
-    @apply font-serif tracking-widest;
+    @apply font-serif tracking-widest leading-tight text-4xl;
   }
 
   p,

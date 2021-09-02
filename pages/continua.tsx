@@ -14,9 +14,8 @@ const Continua = () => {
           <h1 className="text-[20vw] md:text-[10vw] py-6 text-white underline-hero relative">
             Continua
           </h1>
-          <h4 className="font-serif text-white text-[7vw] md:text-[5vw] font-serif">
-            Your guitar, your sound.
-          </h4>
+          <h5 className="text-white">Your guitar, your sound.</h5>
+
           <DownArrows />
         </div>
       </div>

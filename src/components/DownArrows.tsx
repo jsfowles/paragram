@@ -13,7 +13,7 @@ const DownArrows = () => {
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={0.5}
-        d="M19 13l-7 7-7-7m14-8l-7 7-7-7"
+        d="M19 13l-7 7-7-7m14-8l-7"
       />
     </svg>
   );
