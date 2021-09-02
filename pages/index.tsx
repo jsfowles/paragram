@@ -16,10 +16,10 @@ const Home = () => {
         />
         <section className="max-content mx-auto absolute inset-0 z-20 pt-12 flex items-center justify-center text-center">
           <div className="">
-            <h1 className="pb-3 md:pb-6 text-gray-light leading-tight">
+            <h1 className="pb-3 md:pb-6 text-gray-light">
               Electric Guitars <br /> & Basses
             </h1>
-            <h5 className="text-gray-light leading-none text-4xl">
+            <h5 className="text-gray-light leading-tight text-4xl">
               Handmade in Jalisco,
               <br />
               The heart of Mexico

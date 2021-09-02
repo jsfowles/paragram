@@ -11,7 +11,7 @@ const Standard = () => {
           className="h-screen w-full object-cover object-top"
         />
         <div className="absolute inset-0 z-40 text-white flex flex-col justify-center items-center bg-black/40">
-          <h1 className="text-[16vw] md:text-[10vw] py-6 text-white underline--magical">
+          <h1 className="text-[16vw] md:text-[10vw] py-6 text-white underline-hero relative">
             Standard
           </h1>
           <h4 className="text-white text-[7vw] md:text-[5vw] font-serif">

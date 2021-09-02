@@ -15,8 +15,9 @@
   .hero {
     @apply font-serif;
   }
+
   h1 {
-    @apply text-[10vw] md:text-[4vw] text-gray-dark font-thin;
+    @apply text-[10vw] md:text-[4vw] text-gray-dark font-bold leading-[1.1em];
   }
 
   h2 {
