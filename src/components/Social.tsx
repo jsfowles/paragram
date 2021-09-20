@@ -38,7 +38,7 @@ const Social = () => {
           <motion.p
             variants={item(-40, 13)}
             transition={{ duration: 0.4 }}
-            className="uppercase font-sans"
+            className="uppercase"
           >
             Social
           </motion.p>

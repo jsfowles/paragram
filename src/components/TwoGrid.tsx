@@ -32,7 +32,9 @@ const TwoGrid = ({ blockOne, blockTwo, bgColor, textColor }: Props) => {
           className={`${textColor} w-full flex md:flex-row flex-col justify-between md:items-center`}
         >
           <div className="md:w-3/5">
-            <h4 className="pt-3 pb-2 font-bold uppercase">{blockOne.title}</h4>
+            <h4 className="pt-3 pb-2 font-bold uppercase tracking-wide">
+              {blockOne.title}
+            </h4>
             <p>{blockOne.description}</p>
           </div>
           <div className="pt-3 lg:pt-0 pr-10">

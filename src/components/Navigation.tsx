@@ -2,6 +2,10 @@ import { motion } from 'framer-motion';
 import React from 'react';
 import Link from 'next/link';
 import Social from '@components/Social';
+import DesktopNav from '@components/DesktopNav';
+import { useMediaQuery } from 'react-responsive';
+import MobileNav from '@components/MobileNav';
+
 const NavItems = [
   {
     id: 0,
@@ -19,9 +23,9 @@ const NavItems = [
 
 const Navigation = () => {
   const [hover, setHover] = React.useState(false);
-
+  const isMobile = useMediaQuery({ maxWidth: 1024 });
   return (
-    <header className="absolute top-0 left-0 right-0 z-50">
+    <header className="absolute top-0 left-0 right-0 z-50 overflow-hidden">
       <div className=" w-full absolute top-0 z-10 h-[30vh] bg-gradient-to-b from-black to-transparent" />
       <nav className="min-content mx-auto text-center relative z-50">
         <div className="text-white py-8  flex justify-center">
@@ -46,51 +50,8 @@ const Navigation = () => {
             </svg>
           </a>
         </div>
-        <ul className="flex justify-evenly items-center font-sans">
-          {NavItems.map(({ id, item, route }) => (
-            <motion.li
-              key={id}
-              className="relative"
-              onHoverStart={() => {
-                item === 'Instruments' && setHover(true);
-              }}
-              onHoverEnd={() => {
-                item === 'Instruments' && setHover(false);
-              }}
-            >
-              {route ? (
-                <Link href={route} passHref>
-                  <a>
-                    <motion.p className=" font-sans text-white uppercase">
-                      {item}
-                    </motion.p>
-                  </a>
-                </Link>
-              ) : (
-                <motion.p className="font-sans text-white uppercase">
-                  {item}
-                </motion.p>
-              )}
-              {hover && item === 'Instruments' && (
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  className="bg-black/40 text-white lowercase px-10 py-5 rounded-md shadow-2xl absolute z-50  transform -translate-x-10"
-                >
-                  {NavItems[0].items.map(({ title, route }) => (
-                    <Link key={title} href={route} passHref>
-                      <a>
-                        <p className="font-sans uppercase py-1">{title}</p>
-                      </a>
-                    </Link>
-                  ))}
-                </motion.div>
-              )}
-            </motion.li>
-          ))}
-          <Social />
-        </ul>
+        <MobileNav />
+        <DesktopNav />
       </nav>
     </header>
   );

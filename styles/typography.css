@@ -11,31 +11,66 @@
     font-style: normal;
     font-display: swap;
   }
+  @font-face {
+    font-family: 'Flecha M';
+    src: url('./font/FlechaM-Medium.woff2') format('woff2'),
+      url('./font/FlechaM-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
 
-  .hero {
-    @apply font-serif;
+  @font-face {
+    font-family: 'GT Walsheim Pro';
+    src: url('./font/GTWalsheimPro-Regular.woff2') format('woff2'),
+      url('./font/GTWalsheimPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'GT Walsheim Pro';
+    src: url('./font/GTWalsheimPro-Light.woff2') format('woff2'),
+      url('./font/GTWalsheimPro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'GT Walsheim Pro';
+    src: url('./font/GTWalsheimPro-Medium.woff2') format('woff2'),
+      url('./font/GTWalsheimPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
   }
 
   h1 {
-    @apply text-5xl md:text-8xl text-gray-dark font-bold leading-[1.1em];
+    @apply text-5xl md:text-8xl text-gray-dark font-thin leading-[1.1em] font-serif;
   }
 
   h2 {
-    @apply text-[5vw] md:text-[3vw] font-medium;
+    @apply text-[5vw] md:text-[3vw] font-medium font-serif;
   }
+
   h3 {
     width: max-content;
+    @apply font-serif;
   }
+
   h4 {
-    @apply text-xl;
+    @apply text-xl font-serif;
   }
 
   h5 {
-    @apply font-serif tracking-widest leading-tight text-2xl md:text-4xl;
+    @apply font-sans tracking-widest leading-tight text-2xl md:text-4xl;
   }
 
   p,
-  small {
-    @apply font-serif tracking-wide;
+  small,
+  li {
+    @apply font-sans tracking-wide;
   }
 }

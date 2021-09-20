@@ -5,25 +5,18 @@
 html,
 body {
   scroll-behavior: smooth;
-  padding: 0;
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  @apply bg-white text-gray-dark;
+
+  @apply bg-white text-gray-dark font-sans m-0 p-0;
 }
 
-.underline-hero:after {
-  position: absolute;
-  content: '';
-  height: 40px;
-  width: 100%;
-  right: 0;
-  z-index: -1;
-
-  @apply bg-red bottom-[28px]  h-[15px] md:h-[40px];
-}
+/*.underline-hero:after {*/
+/*  content: '';*/
+/*  z-index: -1;*/
+/*  @apply bg-red bottom-[50px]  h-[15px] md:h-[40px] w-full right-0 absolute;*/
+/*}*/
 
 #__next {
-  height: 100vh;
+  @apply h-screen;
 }
 
 a {
@@ -35,9 +28,6 @@ a {
   box-sizing: border-box;
 }
 
-.animate {
-  @apply transition-all duration-500 ease-in-out;
-}
 .max-content {
   @apply max-w-[1280px] px-[7vw];
 }
@@ -45,24 +35,14 @@ a {
 .min-content {
   @apply max-w-[1024px] px-[7vw] lg:px-0;
 }
-.glow {
-  border-radius: 50%;
-  box-shadow: inset 0 0 50px #fff, /* inner white */ inset 20px 0 80px #f0f,
-    /* inner left magenta short */ inset -20px 0 80px #0ff,
-    /* inner right cyan short */ inset 20px 0 300px #f0f,
-    /* inner left magenta broad */ inset -20px 0 300px #0ff,
-    /* inner right cyan broad */ 0 0 50px #fff,
-    /* outer white */ -10px 0 80px #f0f,
-    /* outer left magenta */ 10px 0 80px #0ff; /* outer right cyan */
-}
 
 .popup-content {
   margin: auto;
   background: rgb(255, 255, 255);
   width: 50%;
-
   @apply border border-heading rounded-2xl overflow-hidden;
 }
+
 .popup-arrow {
   color: rgb(255, 255, 255);
 }
@@ -98,4 +78,8 @@ a {
 .popup-content {
   -webkit-animation: anvil 0.3s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
   @apply w-[90%] lg:w-[60%];
+}
+
+.hamburger-react div {
+  @apply !h-[1px];
 }

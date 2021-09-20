@@ -16,7 +16,7 @@ const Home = () => {
         />
         <section className="max-content mx-auto absolute inset-0 z-20 pt-12 flex items-center justify-center text-center">
           <div className="">
-            <h1 className="pb-3 md:pb-6 text-gray-light">
+            <h1 className="text-[15vw] md:text-[5vw] py-6 text-white underline-hero relative whitespace-nowrap">
               Electric Guitars <br /> & Basses
             </h1>
             <h5 className="text-gray-light">

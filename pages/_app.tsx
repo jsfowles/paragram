@@ -1,5 +1,5 @@
 import 'tailwindcss/tailwind.css';
-import '../styles/globals.css';
+import 'styles/globals.css';
 import '../styles/typography.css';
 import Head from 'next/head';
 import { ThemeProvider, useTheme } from 'next-themes';
